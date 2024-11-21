@@ -295,8 +295,7 @@ private:
 		//получение выбора цветов из выпадающих списков
 		Color colorFigure = colorDialogLine->Color;
 		Color colorBack = colorDialogBack->Color;
-
-		//создание объекта для графики
+				
 		graphic->Clear(colorBack); //заполнение фона цветом
 
 		//определение ширины и высоты простанства,
@@ -369,7 +368,7 @@ private:
 		//возможность выбора нескольких расширений
 		saveFileDialog->Filter = ".jpeg|*.jpeg|.bmp|*.bmp|.png|*.png|.gif|*.gif";
 		if(saveFileDialog->ShowDialog() == Windows::Forms::DialogResult::OK) { //если нажали сохранить
-			bitmap->Save(saveFileDialog->FileName);                            //то изображение сохраняется в файл с введенным названием
+			bitmap->Save(saveFileDialog->FileName);                        //то изображение сохраняется в файл с введенным названием
 		}                                                                      //и выбранным пользователем расширением
 
 	}
